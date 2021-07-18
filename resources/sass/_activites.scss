@@ -1,0 +1,9 @@
+.cadre {
+    padding: 6em 2em 3em 18em;
+}
+
+@media screen and (max-width: 865px) {
+    .cadre {
+        padding: 90px 13px 10px 20px;
+    }
+}
