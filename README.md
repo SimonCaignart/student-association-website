@@ -5,6 +5,10 @@ The goal of this school project was to create a website with user and event mana
 
 Install Composer https://getcomposer.org/download/
 
+Launch a MySQL Database (5.7.34) and PHP My Admin
+
+Create a database with the name found in the .env file (hidden)
+
 Run 
 ```
 composer install
