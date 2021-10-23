@@ -17,10 +17,10 @@ class CreateCreatesTable extends Migration
             $table->increments('id');
             //Foreign key of User
             $table->integer('Creator_id')->unsigned();
-            $table->foreign('Creator_id')->references('id')->on('users')->onDelete('cascade')->onUpdate('cascade');
+            //$table->foreign('Creator_id')->references('id')->on('users')->onDelete('cascade')->onUpdate('cascade');
             //Foreign key of Activity
             $table->integer('Activity_id')->unsigned();
-            $table->foreign('Activity_id')->references('id')->on('manifestations')->onDelete('cascade')->onUpdate('cascade');
+            //$table->foreign('Activity_id')->references('id')->on('manifestations')->onDelete('cascade')->onUpdate('cascade');
             $table->timestamps();
         });
     }

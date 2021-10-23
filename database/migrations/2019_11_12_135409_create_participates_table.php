@@ -17,10 +17,10 @@ class CreateParticipatesTable extends Migration
             $table->increments('id');
             //Foreign key of User
             $table->integer('Participant_id')->unsigned();
-            $table->foreign('Participant_id')->references('id')->on('users')->onDelete('cascade')->onUpdate('cascade');
+            //$table->foreign('Participant_id')->references('id')->on('users')->onDelete('cascade')->onUpdate('cascade');
             //Foreign key of Activity
             $table->integer('Activity_id')->unsigned();
-            $table->foreign('Activity_id')->references('id')->on('manifestations')->onDelete('cascade')->onUpdate('cascade');
+            //$table->foreign('Activity_id')->references('id')->on('manifestations')->onDelete('cascade')->onUpdate('cascade');
             //Firstname
             $table->string('Participant_firstname');
             //Name

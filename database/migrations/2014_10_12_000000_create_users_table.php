@@ -22,11 +22,11 @@ class CreateUsersTable extends Migration
             $table->rememberToken();
             
             //Foreign key of Role
-            $table->integer('Role_id')->unsigned()->default("1");
-            $table->foreign('Role_id')->references('id')->on('roles')->onDelete('cascade')->onUpdate('cascade');
+            $table->bigInteger('Role_id')->unsigned()->default("1");
+            //$table->foreign('Role_id')->references('id')->on('roles')->onDelete('cascade')->onUpdate('cascade');
             //Foreign key of Cesi
-            $table->integer('Cesi_id')->unsigned();
-            $table->foreign('Cesi_id')->references('id')->on('Cesis')->onDelete('cascade')->onUpdate('cascade');
+            $table->bigInteger('Cesi_id')->unsigned();
+            //$table->foreign('Cesi_id')->references('id')->on('Cesis')->onDelete('cascade')->onUpdate('cascade');
             $table->timestamps();
         });
     }

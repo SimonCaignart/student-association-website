@@ -17,10 +17,10 @@ class CreateLikedsTable extends Migration
             $table->increments('id');
             //Foreign key of User
             $table->integer('user_id')->unsigned();
-            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade')->onUpdate('cascade');
+            //$table->foreign('user_id')->references('id')->on('users')->onDelete('cascade')->onUpdate('cascade');
             //Foreign key of Comment
             $table->integer('comment_id')->unsigned();
-            $table->foreign('comment_id')->references('id')->on('comments')->onDelete('cascade')->onUpdate('cascade');
+            //$table->foreign('comment_id')->references('id')->on('comments')->onDelete('cascade')->onUpdate('cascade');
             $table->timestamps();
 
 

@@ -19,10 +19,10 @@ class CreateCommentsTable extends Migration
             $table->string('comment_image')->nullable();
             //Foreign key of User
             $table->integer('user_id')->unsigned();
-            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade')->onUpdate('cascade');
+            //$table->foreign('user_id')->references('id')->on('users')->onDelete('cascade')->onUpdate('cascade');
             //Foreign key of Activity
             $table->integer('Activity_id')->unsigned();
-            $table->foreign('Activity_id')->references('id')->on('manifestations')->onDelete('cascade')->onUpdate('cascade');
+            //$table->foreign('Activity_id')->references('id')->on('manifestations')->onDelete('cascade')->onUpdate('cascade');
             $table->timestamps();
         });
     }

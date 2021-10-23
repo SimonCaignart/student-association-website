@@ -17,7 +17,7 @@ class CreateBasketsTable extends Migration
             $table->increments('id');
             //Foreign key of User
             $table->integer('User_id')->unsigned();
-            $table->foreign('User_id')->references('id')->on('users')->onDelete('cascade')->onUpdate('cascade');
+            //$table->foreign('User_id')->references('id')->on('users')->onDelete('cascade')->onUpdate('cascade');
             $table->timestamps();
         });
     }

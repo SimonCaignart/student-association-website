@@ -28,18 +28,11 @@ Route::get('/mentions', 'PagesController@Mentions');
 Route::get('/confidentialité', 'PagesController@Confidentialité');
 Route::get('/dashboard', 'DashboardController@index');
 
-<<<<<<< HEAD
 Route::resource('products', 'ProductsController');
-Route::resource('comments', 'CommentsController');
-=======
-
-Route::resource('products', 'ProductsController');
->>>>>>> DevSacha
 Route::resource('administrations', 'AdministrationsController');
 Route::resource('manifestations', 'ManifestationsController');
 Route::resource('comments', 'CommentsController');
 Route::resource('participates', 'ParticipatesController');
-
 
 Route::get('/add-to-cart/{id}', [
         'uses' => 'ProductsController@getAddToCart',
@@ -71,10 +64,7 @@ Route::post('/alertemail', [
         'as' => 'Mails.alertemail'
 ]);
 
-<<<<<<< HEAD
-=======
 Route::get('export', 'ParticipatesController@export')->name('export');
 Route::get('importExportView', 'ParticpatesController@importExportView');
 
->>>>>>> DevSacha
 Auth::routes();
